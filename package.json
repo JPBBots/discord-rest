@@ -1,0 +1,23 @@
+{
+  "name": "discord-rest",
+  "version": "1.0.0",
+  "description": "Discord HTTP Rest",
+  "main": "RestManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpbbots/discord-rest.git"
+  },
+  "keywords": [
+    "rest",
+    "discord"
+  ],
+  "author": "JPBBerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpbbots/discord-rest/issues"
+  },
+  "homepage": "https://github.com/jpbbots/discord-rest#readme"
+}

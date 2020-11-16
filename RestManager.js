@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
-const Cache = require('../../util/Cache')
-const encodeJSON = require('../../util/encodeJSON')
+const Cache = require('./util/Cache')
+const encodeJSON = require('./util/encodeJSON')
 
 const Bucket = require('./Bucket')
 const RouteBuilder = require('./RouteBuilder')
@@ -53,7 +53,7 @@ class RestManager {
     if (options.body) headers['Content-Type'] = 'application/json'
     if (options.reason) headers['X-Audit-Log-Reason'] = options.reason
 
-    headers['User-Agent'] = 'DiscordBot (censor.bot, v9)'
+    headers['User-Agent'] = 'DiscordBot (JPBBots-Discord-Rest, v1)'
 
     const res = await fetch(`https://discord.com/api/v7/${route.join('/')}${options.query ? `?${encodeJSON(options.query)}` : ''}`, {
       method, headers: { ...headers, ...(options.headers || {}) }, body: options.body ? (options.parser || JSON.stringify)(options.body) : null
